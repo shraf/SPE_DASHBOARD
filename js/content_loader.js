@@ -11,7 +11,10 @@ async function init(){
 async function pushElementIntoDOM(data,parent_identifier){
     console.log(parent_identifier);
     const parent = document.querySelector(parent_identifier);
-    parent.innerHtml = data.toString();
+    const elementsHtml=data.map(el=>el.data);
+    const htmlString=elementsHtml.join("");
+    parent.innerHTML = htmlString;
+    console.log(elementsHtml.join(""))
 }
 
 async function generateElement(){

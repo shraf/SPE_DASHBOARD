@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- IE Compatibility Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Start author name -->
+    <meta name="author" content="SPE SU SC" />
+    <!-- Start Title -->
+    <title>SPE Dashboard</title>
+    <!-- the icon for the website -->
+    <link rel="icon" type="image/png" size="48x48" href="/img/icon2.ico" />
+    <!-- External files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <my-header></my-header>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <my-offcanvas></my-offcanvas>
+    <!-- offcanvas-->
+    <!-- Content -->
+    <main class="p-3">
+      <div class="container-fluid">
+        <div class="row">
+          <p class="lead text-center fw-bold poppins">
+            welcome in sections page
+          </p>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <!-- subnavbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Sections</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Our Main Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">PACE</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">PICS</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">SBS</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Energy4Me</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Technical club</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">skills club</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Magazines
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">ECHO Magazine</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Criterion</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Magazine</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Newsletters</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- subnavbar -->
+        </div>
+        <!-- row -->
+        <!-- row -->
+        <div class="row my-2">
+          <!-- card -->
+          <div
+            class="card row col-md-4 col-sm-6 col-xs-12"
+            style="width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Volunteers to Pioneers</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text">
+                SPE Suez is a leading student activity in Suez university
+                providing technical and non-technical services for all student
+                especially petroleum engineering students.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="fas fa-pen"></i>
+                Edit
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Edit section item
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="floatingInputValue"
+                          value="Volunteers to Pioneers"
+                        />
+                        <label for="floatingInputValue">Title</label>
+                      </form>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control my-2"
+                          placeholder="Leave a comment here"
+                          id="floatingTextarea2"
+                          style="height: 100px"
+                        >
+SPE Suez is a leading student activity in Suez university providing technical and non-technical services for all student especially petroleum engineering students.</textarea
+                        >
+                        <label for="floatingTextarea2">body</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="btn btn-danger"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1511"
+              >
+                <i class="far fa-trash-alt"></i> Delete
+              </div>
+
+              <!-- Delete Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal1511"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabe0011"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabe0011">
+                        Delete this card
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="alert alert-warning">
+                        Are you sure to delete this card?
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        yes, Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- footer -->
+      <my-footer></my-footer>
+      <!-- footer -->
+    </main>
+    <!-- Content -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

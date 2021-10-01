@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto+Slab:wght@100&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+/* start vars */
+:root {
+  --logoColor: #1467c7;
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 88.96px;
+}
+/* End vars */
+
+/* fonts */
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* fonts */
+
+main {
+  margin-top: var(--topNavbarHeight) !important;
+}
+
+/* navbar */
+.logo-color {
+  color: #054a94;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.bg-logo-color {
+  background-color: var(--logoColor);
+}
+.navbar-brand img {
+  width: 90px;
+}
+/* navbar */
+
+/* start sm screen media query */
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+    margin-top: var(--topNavbarHeight) !important;
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+/* End media query */
+/* start offcanvas */
+.offcanvas-body {
+  margin-top: -15px !important;
+}
+.accordion-button {
+  text-transform: capitalize !important;
+}
+/* End offcanvas */

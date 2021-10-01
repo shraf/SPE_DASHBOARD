@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- IE Compatibility Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Start author name -->
+    <meta name="author" content="SPE SU SC" />
+    <!-- Start Title -->
+    <title>SPE Dashboard</title>
+    <!-- the icon for the website -->
+    <link rel="icon" type="image/png" size="48x48" href="/img/icon2.ico" />
+    <!-- External files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <my-header></my-header>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <my-offcanvas></my-offcanvas>
+    <!-- offcanvas-->
+    <!-- Content -->
+    <main class="p-3">
+      <div class="container-fluid">
+        <div class="row">
+          <p class="lead text-center fw-bold poppins">welcome in nav page</p>
+        </div>
+        <!-- sections accordion -->
+        <div class="row mb-2">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Sections
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse gab-2"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body d-grid gap-3">
+                  <!-- home -->
+                  <div class="p-2 bg-light border d-flex">
+                    <p class="me-auto">Home</p>
+                    <!-- Edit Button trigger modal -->
+                    <div
+                      class="btn text-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal1"
+                    >
+                      <i class="fas fa-edit text-primary"></i>
+                    </div>
+
+                    <!-- Edit Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal1"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Edit Home
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-floating mb-2">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInputValue"
+                                value="Home"
+                              />
+                              <label for="floatingInputValue">Value</label>
+                            </form>
+                            <form class="form-floating">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInputValue1"
+                                value="Home.html"
+                              />
+                              <label for="floatingInputValue1">href</label>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save changes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Edit Modal -->
+
+                    <!-- Delete Button trigger modal -->
+                    <div
+                      class="btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal2"
+                    >
+                      <i class="far fa-trash-alt text-danger"></i>
+                    </div>
+
+                    <!-- Delete Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal2"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Delete Home
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="alert alert-warning">
+                              Are you sure to delete Home item?
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              yes, Delete
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Delete Modal -->
+                  </div>
+                  <!-- home -->
+                  <!-- About -->
+
+                  <div class="p-2 bg-light border d-flex">
+                    <p class="me-auto">About</p>
+                    <!-- Edit Button trigger modal -->
+                    <div
+                      class="btn text-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3"
+                    >
+                      <i class="fas fa-edit text-primary"></i>
+                    </div>
+
+                    <!-- Edit Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal3"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Edit About
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-floating">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInputValue"
+                                value="About"
+                              />
+                              <label for="floatingInputValue">Value</label>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save changes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Edit Modal -->
+
+                    <!-- Delete Button trigger modal -->
+                    <div
+                      class="btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal4"
+                    >
+                      <i class="far fa-trash-alt text-danger"></i>
+                    </div>
+
+                    <!-- Delete Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal4"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Delete About
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="alert alert-warning">
+                              Are you sure to delete About item?
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              yes, Delete
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Delete Modal -->
+                  </div>
+                  <!-- About -->
+                  <!-- Activities -->
+                  <div class="p-2 bg-light border d-flex">
+                    <p class="me-auto">Activities</p>
+                    <!-- Edit Button trigger modal -->
+                    <div
+                      class="btn text-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal5"
+                    >
+                      <i class="fas fa-edit text-primary"></i>
+                    </div>
+
+                    <!-- Edit Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal5"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Edit Activities
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-floating">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInputValue"
+                                value="Activities"
+                              />
+                              <label for="floatingInputValue">Value</label>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save changes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Edit Modal -->
+
+                    <!-- Delete Button trigger modal -->
+                    <div
+                      class="btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal7"
+                    >
+                      <i class="far fa-trash-alt text-danger"></i>
+                    </div>
+
+                    <!-- Delete Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal7"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Delete Activities
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="alert alert-warning">
+                              Are you sure to delete Activities item?
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              yes, Delete
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Delete Modal -->
+                  </div>
+                  <!-- Activities -->
+                  <!-- our main projects accordion -->
+                  <div class="p-2 bg-light border">
+                    <div class="accordion" id="accordionProjects">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingProjects">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseProjects"
+                            aria-expanded="true"
+                            aria-controls="collapseProjects"
+                          >
+                            Our Main Projects
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseProjects"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingProjects"
+                          data-bs-parent="#accordionProjects"
+                        >
+                          <div class="accordion-body">
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">PACE</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">PICS</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">SBS</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">Energy4Me</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">Technical club</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">skills club</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- our main projects accordion -->
+                  <!-- Magazines accordion -->
+                  <div class="p-2 bg-light border">
+                    <div class="accordion" id="accordionMagazines">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingProjects">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseMagazines"
+                            aria-expanded="true"
+                            aria-controls="collapseMagazines"
+                          >
+                            Our Main Projects
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseMagazines"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingProjects"
+                          data-bs-parent="#accordionMagazines"
+                        >
+                          <div class="accordion-body">
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">ECHO Magazine</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">Criterion</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">Magazine</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                            <div class="p-2 bg-light border d-flex">
+                              <p class="me-auto">Ultra Newsletters</p>
+                              <div class="btn">
+                                <i class="fas fa-edit text-primary"></i>
+                              </div>
+                              <div class="btn">
+                                <i class="far fa-trash-alt text-danger"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Magazines accordion -->
+                  <!-- add section -->
+                  <!-- add section trigger modal -->
+                  <div
+                    class="btn btn-primary col-12 mt-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addImage"
+                  >
+                    <i class="fas fa-plus"></i> Section
+                  </div>
+
+                  <!-- add section Modal -->
+                  <div class="modal fade" id="addImage" tabindex="-1"
+                  aria-labelledby="label aria-hidden="true" >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="label">Add Section</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form-floating mb-2">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="floatingInputValue2"
+                          />
+                          <label for="floatingInputValue2">name</label>
+                        </form>
+                        <form class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="floatingInputValue3"
+                          />
+                          <label for="floatingInputValue3">link</label>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- add section Modal -->
+                <!-- add section -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sections accordion -->
+      <!-- footer -->
+      <my-footer></my-footer>
+      <!-- footer -->
+    </main>
+    <!-- Content -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

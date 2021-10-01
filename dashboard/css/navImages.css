@@ -1,0 +1,8 @@
+.row .img-fluid {
+  transition: all 0.25s ease-in-out;
+}
+
+.row .img-fluid:hover,
+.modal-body .img-fluid {
+  opacity: 0.85;
+}
